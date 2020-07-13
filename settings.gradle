@@ -1,0 +1,2 @@
+rootProject.name='ProgressRing'
+include ':app'
