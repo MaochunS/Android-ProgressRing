@@ -89,8 +89,8 @@ public class CircularProgressView extends View {
             mPrimaryStrokeWidth = a.getDimensionPixelSize(R.styleable.MyProgress_primaryStrokeWidth,  mStrokeWidth);
             mSecondaryStrokeWidth = a.getDimensionPixelSize(R.styleable.MyProgress_secondaryStokeWidth, mStrokeWidth);
 
-            mPrimaryCapSize = a.getInt(R.styleable.MyProgress_primaryCapSize, 20);
-            mSecondaryCapSize = a.getInt(R.styleable.MyProgress_secodaryCapSize, 20);
+            mPrimaryCapSize = a.getDimensionPixelSize(R.styleable.MyProgress_primaryCapSize, mPrimaryStrokeWidth/2);
+            mSecondaryCapSize = a.getDimensionPixelSize(R.styleable.MyProgress_secodaryCapSize, mSecondaryStrokeWidth/2);
 
             mIsPrimaryCapVisible = a.getBoolean(R.styleable.MyProgress_primaryCapVisibility, true);
             mIsSecondaryCapVisible = a.getBoolean(R.styleable.MyProgress_secodaryCapVisibility, true);

@@ -7,8 +7,8 @@
     <attr name="progressColor" format="color" />
     <attr name="secondaryProgressColor" format="color" />
     <attr name="backgroundColor" format="color" />
-    <attr name="primaryCapSize" format="integer" />
-    <attr name="secodaryCapSize" format="integer" />
+    <attr name="primaryCapSize" format="dimension" />
+    <attr name="secodaryCapSize" format="dimension" />
     <attr name="primaryCapVisibility" format="boolean" />
     <attr name="secodaryCapVisibility" format="boolean" />
     <attr name="startAngle" format="integer"/>
