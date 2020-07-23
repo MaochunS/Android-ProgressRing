@@ -67,35 +67,35 @@ public class CircularProgressView extends View {
         if (attrs != null) {
             a = context.getTheme().obtainStyledAttributes(
                     attrs,
-                    R.styleable.MyProgress,
+                    R.styleable.CircularProgress,
                     0, 0);
         } else {
             throw new IllegalArgumentException("Must have to pass the attributes");
         }
 
         try {
-            mDrawText = a.getBoolean(R.styleable.MyProgress_showProgressText, false);
+            mDrawText = a.getBoolean(R.styleable.CircularProgress_showProgressText, false);
 
-            mBackgroundColor = a.getColor(R.styleable.MyProgress_backgroundColor, android.R.color.darker_gray);
-            mPrimaryProgressColor = a.getColor(R.styleable.MyProgress_progressColor, android.R.color.darker_gray);
-            mSecondaryProgressColor = a.getColor(R.styleable.MyProgress_secondaryProgressColor, android.R.color.black);
+            mBackgroundColor = a.getColor(R.styleable.CircularProgress_backgroundColor, android.R.color.darker_gray);
+            mPrimaryProgressColor = a.getColor(R.styleable.CircularProgress_progressColor, android.R.color.darker_gray);
+            mSecondaryProgressColor = a.getColor(R.styleable.CircularProgress_secondaryProgressColor, android.R.color.black);
 
-            mProgress = a.getInt(R.styleable.MyProgress_progress, 0);
-            mSecodaryProgress = a.getInt(R.styleable.MyProgress_secondaryProgress, 0);
+            mProgress = a.getInt(R.styleable.CircularProgress_progress, 0);
+            mSecodaryProgress = a.getInt(R.styleable.CircularProgress_secondaryProgress, 0);
 
-            mStrokeWidth = a.getDimensionPixelSize(R.styleable.MyProgress_strokeWidth, 20);
-            mTextColor = a.getColor(R.styleable.MyProgress_textColor, android.R.color.black);
+            mStrokeWidth = a.getDimensionPixelSize(R.styleable.CircularProgress_strokeWidth, 20);
+            mTextColor = a.getColor(R.styleable.CircularProgress_textColor, android.R.color.black);
 
-            mPrimaryStrokeWidth = a.getDimensionPixelSize(R.styleable.MyProgress_primaryStrokeWidth,  mStrokeWidth);
-            mSecondaryStrokeWidth = a.getDimensionPixelSize(R.styleable.MyProgress_secondaryStokeWidth, mStrokeWidth);
+            mPrimaryStrokeWidth = a.getDimensionPixelSize(R.styleable.CircularProgress_primaryStrokeWidth,  mStrokeWidth);
+            mSecondaryStrokeWidth = a.getDimensionPixelSize(R.styleable.CircularProgress_secondaryStokeWidth, mStrokeWidth);
 
-            mPrimaryCapSize = a.getDimensionPixelSize(R.styleable.MyProgress_primaryCapSize, mPrimaryStrokeWidth/2);
-            mSecondaryCapSize = a.getDimensionPixelSize(R.styleable.MyProgress_secodaryCapSize, mSecondaryStrokeWidth/2);
+            mPrimaryCapSize = a.getDimensionPixelSize(R.styleable.CircularProgress_primaryCapSize, mPrimaryStrokeWidth/2);
+            mSecondaryCapSize = a.getDimensionPixelSize(R.styleable.CircularProgress_secodaryCapSize, mSecondaryStrokeWidth/2);
 
-            mIsPrimaryCapVisible = a.getBoolean(R.styleable.MyProgress_primaryCapVisibility, true);
-            mIsSecondaryCapVisible = a.getBoolean(R.styleable.MyProgress_secodaryCapVisibility, true);
+            mIsPrimaryCapVisible = a.getBoolean(R.styleable.CircularProgress_primaryCapVisibility, true);
+            mIsSecondaryCapVisible = a.getBoolean(R.styleable.CircularProgress_secodaryCapVisibility, true);
 
-            mStartAngle = a.getInteger(R.styleable.MyProgress_startAngle, 0);
+            mStartAngle = a.getInteger(R.styleable.CircularProgress_startAngle, 0);
 
         } finally {
             a.recycle();

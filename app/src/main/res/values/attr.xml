@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<declare-styleable name="MyProgress">
+<declare-styleable name="CircularProgress">
     <attr name="showProgressText" format="boolean" />
     <attr name="progress" format="integer" />
     <attr name="secondaryProgress" format="integer" />
